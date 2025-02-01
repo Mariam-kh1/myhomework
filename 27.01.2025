@@ -1,29 +1,30 @@
 #include <iostream>
-#include <cmath>
-using namespace std;
 int main() {
-    double a, b;
-    char c;
-    cin>>a>>c>>b;
+    double a = 0;
+    double b = 0;
+    char c = '-';
+    std :: cin >> a;
+    std :: cin >> c;
+    std :: cin >> b;
     switch (c) {
         case '+' :
-            cout<<a+b<<endl;
+            std :: cout << a + b << std ::  endl;
             break;
-        case '-';
-            cout<<a-b<<endl;
+        case '-' :
+            std :: cout << a - b << std :: endl;
             break;
         case '*':
-            cout<<a*b<<andl;
+            std :: cout << a * b << std ::  endl;
             break;
         case '/':
             if (0 != b) {
-                cout<<a/b<<endl;
+                std :: cout << a / b << std ::  endl;
             }else {
-                cout<<"Error"<<endl;
+                std :: cout << "Error" << std ::  endl;
             }
             break;
         default:
-            cout<<"Wrong sign"<<endl;
+            std :: cout << "Wrong sign" << std :: endl;
     }
-    return
+    return 0;
 }
