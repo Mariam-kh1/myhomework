@@ -1,0 +1,23 @@
+#include <iostream>
+int main(){
+    int a;
+    int b;
+    int u;
+    int t;
+    int h;
+    int th;
+    std :: cin >> a;
+    if (a % 2 == 0) {
+        std :: cout << "Is even" << std :: endl;
+    } else {
+        std :: cout << "Is odd" << std :: endl;
+    }
+    std :: cout << "Enter a four-digit number:" << std :: endl;
+    std :: cin >> b;
+    u = b % 10;
+    t = (b % 100 - u) / 10;
+    h = (b % 1000 - u + t * 10) / 100;
+    th = (b - b % 1000) / 1000;
+    std :: cout << u + t + h + th;
+    return 0;
+}
